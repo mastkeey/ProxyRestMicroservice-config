@@ -6,3 +6,8 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
     register-with-eureka: true
+
+url:
+  albums: https://jsonplaceholder.typicode.com/albums
+  posts: https://jsonplaceholder.typicode.com/posts
+  users: https://jsonplaceholder.typicode.com/users
