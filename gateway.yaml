@@ -10,7 +10,7 @@ spring:
         - id: apis
           uri: localhost:8080
           predicates:
-            - Path=/apis/
+            - Path=/apis/**
 eureka:
   client:
     service-url:
