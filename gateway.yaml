@@ -6,8 +6,13 @@ spring:
       discovery:
         locator:
           enabled: true
+      routes:
+        - id: api
+          uri: lb://api
+          predicates:
+            - Path=/api/**
 eureka:
-  client:
+ routes:client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
     register-with-eureka: true
