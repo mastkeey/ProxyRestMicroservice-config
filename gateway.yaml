@@ -10,7 +10,7 @@ spring:
         - id: api
           uri: lb://api
           predicates:
-            - Path=/api/**
+            - Path=/api/
 eureka:
   client:
     service-url:
