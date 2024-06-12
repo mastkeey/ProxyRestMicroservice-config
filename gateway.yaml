@@ -8,7 +8,7 @@ spring:
           enabled: true
       routes:
         - id: apis
-          uri: http://localhost:8080
+          uri: localhost:apis
           predicates:
             - Path=/huy/
 eureka:
