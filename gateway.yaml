@@ -7,8 +7,8 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: jsonPlaceholder-service.yaml
-          uri: lb://jsonPlaceholder-service.yaml
+        - id: jsonPlaceholder-service
+          uri: lb://jsonPlaceholder-service
           predicates:
             - Path=/jsonPlaceholder/**
 eureka:
