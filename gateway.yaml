@@ -12,7 +12,7 @@ spring:
           predicates:
             - Path=/jsonPlaceholder/**
         - id: websocket-service
-          uri: lb://websocket-service
+          uri: lb:ws://websocket-service
           predicates:
             - Path=/websocket/**
 eureka:
