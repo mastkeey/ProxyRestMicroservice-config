@@ -7,10 +7,10 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: api
+        - id: apis
           uri: localhost:8080
           predicates:
-            - Path=/api/
+            - Path=/apis/
 eureka:
   client:
     service-url:
