@@ -11,6 +11,10 @@ spring:
           uri: lb://jsonPlaceholder-service
           predicates:
             - Path=/jsonPlaceholder/**
+        - id: websocket-service
+          uri: lb://websocket-service
+          predicates:
+            - Path=/websocket/**
 eureka:
   client:
     service-url:
