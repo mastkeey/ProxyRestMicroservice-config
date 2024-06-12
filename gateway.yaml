@@ -10,7 +10,7 @@ spring:
         - id: jsonPlaceholder-service.yaml
           uri: lb://jsonPlaceholder-service.yaml
           predicates:
-            - Path=/jsonPlaceholder/
+            - Path=/jsonPlaceholder/**
 eureka:
   client:
     service-url:
