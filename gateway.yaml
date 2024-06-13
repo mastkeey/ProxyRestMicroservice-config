@@ -12,7 +12,7 @@ spring:
           predicates:
             - Path=/jsonPlaceholder/**
         - id: websocket-service
-          uri: ws://localhost:8080
+          uri: lb://websocket-service
           predicates:
             - Path=/ws/**
           filters:
