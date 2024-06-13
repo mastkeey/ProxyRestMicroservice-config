@@ -11,8 +11,9 @@ spring:
           uri: lb://jsonPlaceholder-service
           predicates:
             - Path=/jsonPlaceholder/**
+
         - id: websocket-service
-          uri: lb://websocket-service
+          uri: lb:ws://websocket-service
           predicates:
             - Path=/ws/**
           filters:
