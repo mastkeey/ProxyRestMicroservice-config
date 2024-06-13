@@ -12,9 +12,13 @@ spring:
           predicates:
             - Path=/jsonPlaceholder/**
         - id: websocket-service
-          uri: lb:ws://websocket-service
+          uri: ws://localhost:8080
           predicates:
-            - Path=/websocket/**
+            - Path=/ws/**
+          filters:
+            - name: RemoveRequestHeader
+              args:
+                name: Sec-WebSocket-Protocol
 eureka:
   client:
     service-url:
