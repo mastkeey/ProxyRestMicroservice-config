@@ -15,7 +15,7 @@ spring:
         - id: websocket-service
           uri: lb:ws://websocket-service
           predicates:
-            - Path=/ws/**
+            - Path=/websocket/**
           filters:
             - name: RemoveRequestHeader
               args:
