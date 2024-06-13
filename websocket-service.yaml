@@ -5,3 +5,5 @@ eureka:
     register-with-eureka: true
 server:
   port: 0
+  servlet:
+    context-path: /websocket
